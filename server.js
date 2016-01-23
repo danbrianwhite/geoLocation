@@ -9,7 +9,7 @@ function handler (req, res) {
     {
         debugger;
         res.statusCode = 302;
-        res.setHeader("Location", "http://demo.geo.localhost:1337/");
+        res.setHeader("Location", "http://demo.geo."+req.headers.host+"/");
         res.end();
     }
 
