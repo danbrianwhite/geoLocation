@@ -7,7 +7,6 @@ function handler (req, res) {
 
     if(req.headers.host.split('.').length === 1)
     {
-        debugger;
         res.statusCode = 302;
         res.setHeader("Location", "http://demo.geo."+req.headers.host+"/");
         res.end();
