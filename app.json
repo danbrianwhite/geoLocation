@@ -1,0 +1,6 @@
+{
+  "name": "geoLocal",
+  "description": "geo Location demo",
+  "repository": "https://github.com/danbrianwhite/geoLocation",
+  "image": "heroku/nodejs"
+}

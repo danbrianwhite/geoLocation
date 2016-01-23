@@ -19,9 +19,8 @@ function handler (req, res) {
 
 geoLocation(app);
 
-app.listen(1337);
+app.listen((process.env.PORT || 1337));
 
 
 
-console.log('Server running at http://localhost:1337/');
-console.log('Demo at http://demo.geo.localhost:1337/');
+console.log('Server running at on port ' + (process.env.PORT || 1337));
