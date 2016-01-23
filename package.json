@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "cookie": "^0.2.3"
+  },
+  "engines": {
+    "node": "4.2.0"
   }
 }
