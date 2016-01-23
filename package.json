@@ -1,0 +1,15 @@
+{
+  "name": "geolocation",
+  "version": "1.0.0",
+  "description": "Library to request a user's geolocation and rerequest it if they accidentally clicked deny.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Dan White",
+  "license": "ISC",
+  "dependencies": {
+    "cookie": "^0.2.3"
+  }
+}
