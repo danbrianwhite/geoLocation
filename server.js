@@ -5,7 +5,11 @@ var app = http.createServer(handler);
 
 function handler (req, res) {
 
-    if(req.headers.host.split('.').length === 1)
+    var _hosts = req.headers.host.split('.');
+    if(_hosts.length > 0 && _hosts[0] !== 'demo' && _hosts[0] !== 'geo' &&
+
+        (isNaN(parseInt(_hosts[0])) || parseInt(_hosts[0]).toString().length !== _hosts[0].length)
+    )
     {
         res.statusCode = 302;
         res.setHeader("Location", "http://demo.geo."+req.headers.host+"/");
